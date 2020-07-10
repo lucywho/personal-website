@@ -1,0 +1,9 @@
+color scheme
+
+main text:  #041f4a; (datk blue)
+highlight text: #c70000 (red)
+background: #f1e9da
+hightlight background: #939a9d (grey)
+
+#214e34 (british racing green)
+#fb8b24 (dark orange)
