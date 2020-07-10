@@ -4,14 +4,16 @@ $(".self").html(
     '<img src="./assets/lucy.jpg" alt="Lucy Toman profile photo" />'
 );
 $(".name-text").html("Lucy Toman");
-$(".lang").html('<button id="en">🇬🇧</button> <button id="de">🇩🇪</button> ');
 $(".contact-me").html(
-    `<div id="cv"><i class='far fa-file-alt'></i> More about me</div>
+    `<div id="cv"><i class='far fa-file-alt'></i> About me</div>
     <a href="https://www.linkedin.com/in/lucytoman/" target="_blank"><i class='fab fa-linkedin'> </i> LinkedIn</a>
     <a href="https://github.com/lucywho" target="_blank"><i class='fab fa-github'> </i> GitHub </a>
     <a href="mailto:lucy.toman+website@gmail.com" target="_blank"><i class="far fa-envelope"> </i> Email </a>
     `
 );
+
+$(".lang").html('<button id="en">🇬🇧</button> <button id="de">🇩🇪</button> ');
+$(".theme").html('<button id="theme" onclick="toggleTheme()">🌒</button>');
 
 $(".modal-name").html(`<p class="name">Lucy Toman</p>`);
 
@@ -60,20 +62,19 @@ $(".print").html(
     `<h4>About me: the long version</h4><a href="./assets/LucyTomanCV.pdf" target="_blank"><i class='far fa-file-alt'></i> Full CV (opens in a new tab)</a></p>`
 );
 
-$(".theme").html('<button id="theme" onclick="toggleTheme()">🌒</button>');
-
 function start() {
     $(".projects-header").html("Recent Projects");
-    $(".text").html("Welcome to my website!");
+    $(".welcome-text").html("Welcome to my website!");
     $(".about-me-text").html(
         `<strong>HIRE ME!</strong></br></br>I'm a recent graduate of Spiced Academy's full stack web development course. I write in vanilla JavaScript and jQuery, with Node.js. I have built projects using Handlebars, Vue and React, and have created databases with postgreSQL.Now I'm looking for new challenges as a junior developer.</br></br>
         I have a degree in Education and 15 years experience as a policy advisor and project manager in the UK Civil Service. Native English-speaker with intermediate German</br></br>
         `
     );
     $(".under-construction").html(
-        `<em>Note: This website is still under construction: some "Recent Projects" link to GitHub respositories.</em>`
+        `<p><em>(Note: This website is still under construction: some "Recent Projects" link to GitHub respositories.)</em></p>`
     );
-    $(".posts-header").html(`<strong>Blog Posts</strong>`);
+
+    $(".posts-header").html(`Blog Posts`);
     $(".recent-posts").html(`<span>Coming Soon!</span>`);
 }
 
@@ -87,7 +88,7 @@ $(document).ready(function() {
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         cssEase: "linear",
         appendDots: $(".projects"),
     });
