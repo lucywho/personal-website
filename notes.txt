@@ -1,9 +1,30 @@
 color scheme
 
-main text:  #041f4a; (datk blue)
-highlight text: #c70000 (red)
-background: #f1e9da
-hightlight background: #939a9d (grey)
 
-#214e34 (british racing green)
-#fb8b24 (dark orange)
+LIGHT
+main text:
+$russian-violet: rgba(46, 0, 48, 1); #2e0030
+
+container background:
+$eggshell: rgba(241, 233, 218, 1); #f1e9da
+
+higlights, modal h4:
+$mountain-meadow: rgba(0, 189, 157, 1); #00bd9d
+
+name, modal h5  and arrows
+$green-blue: rgba(2, 103, 193, 1); #0267c1
+
+
+DARK
+main text:
+$eggshell: rgba(241, 233, 218, 1); #f1e9da
+
+container background:
+$russian-violet: rgba(46, 0, 48, 1); #2e0030
+
+higlights, modal h4:
+$mountain-meadow: rgba(0, 189, 157, 1); #00bd9d
+
+name, modal h5 and arrows:
+$green-blue: rgba(2, 103, 193, 1); #0267c1
+

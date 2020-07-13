@@ -15,7 +15,7 @@ $(".contact-me").html(
 $(".lang").html('<button id="en">🇬🇧</button> <button id="de">🇩🇪</button> ');
 $(".theme").html('<button id="theme" onclick="toggleTheme()">🌒</button>');
 
-$(".modal-name").html(`<p class="name">Lucy Toman</p>`);
+$(".modal-name").html(`<div class="name-text">Lucy Toman</div>`);
 
 $(".cv-text").html(`
 <h4>About me: the short version</h4>
@@ -91,7 +91,6 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         cssEase: "linear",
-        appendDots: $(".projects"),
     });
 });
 
