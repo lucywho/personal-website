@@ -47,7 +47,7 @@ a:hover,
 }
 
 .self img {
-    border: 2px solid #2e0030;
+    border: 5px solid #2e0030;
     height: 150px;
     border-radius: 20px;
 }
@@ -128,7 +128,7 @@ button {
     font-family: inherit;
     font-size: 1rem;
     padding: 5px;
-    border: 1px solid #2e0030;
+    border: 2px solid #2e0030;
     background-color: #f1e9da;
     border-radius: 20px;
 }
@@ -147,7 +147,7 @@ button:hover {
     background-color: #00bd9d;
 }
 
-#de {
+#lang {
     margin: 0 15px;
 }
 

@@ -12,7 +12,6 @@ $(".contact-me").html(
     `
 );
 
-$(".lang").html('<button id="en">🇬🇧</button> <button id="de">🇩🇪</button> ');
 $(".theme").html('<button id="theme" onclick="toggleTheme()">🌒</button>');
 
 $(".modal-name").html(`<div class="name-text">Lucy Toman</div>`);
@@ -77,6 +76,10 @@ function start() {
 
     $(".posts-header").html(`Blog Posts`);
     $(".recent-posts").html(`<span>Coming Soon!</span>`);
+
+    $(".lang").html(
+        '<button id="lang" class="de" onclick="toggleLang()">🇩🇪</button>'
+    );
 }
 
 $(document).ready(function() {
@@ -94,11 +97,7 @@ $(document).ready(function() {
     });
 });
 
-$("#en").click(function() {
-    start();
-});
-
-$("#de").click(function() {
+function german() {
     $(".projects-header").html("Aktuelle Projekte");
     $(".welcome-text").html("Wilkommen auf meiner Website!");
     $(".about-me-header").html(
@@ -106,14 +105,26 @@ $("#de").click(function() {
     );
     $(".about-me-text").html(
         `Ich habe den Full-Stack-Web-Developer-Kurs der Spiced Academy absolviert. Ich schreibe in Vanilla JavaScript und jQuery mit Node.js. Ich habe Projekte mit Handlebars, Vue und React sowie Datenbanken mit PostgreSQL erstellt. Ich suche jetzt nach neuen Herausforderungen als Junior Developer.
-        </br></br>
-        Ich habe einen Abschluss in Bildung und kann 15 Jahre Erfahrung als Politikberaterin und Projektmanagerin im britischen öffentlichen Dienst vorweisen. Ich spreche Englisch als Muttersprache und mittelmäßiges Deutsch, lerne aber weiter</br>
-      `
+    </br></br>
+    Ich habe einen Abschluss in Bildung und kann 15 Jahre Erfahrung als Politikberaterin und Projektmanagerin im britischen öffentlichen Dienst vorweisen. Ich spreche Englisch als Muttersprache und mittelmäßiges Deutsch, lerne aber weiter</br>
+  `
     );
     $(".under-construction").html(
         `<em> Hinweis: Diese Website befindet sich noch im Aufbau und einige "Aktuelle Projekte" verlinken auf Github Repositories.</em>`
     );
-});
+
+    $(".lang").html(
+        '<button id="lang" class="en" onclick="toggleLang()">🇬🇧</button> '
+    );
+}
+
+function toggleLang() {
+    if ($(".de")[0]) {
+        german();
+    } else {
+        start();
+    }
+}
 
 function toggleTheme() {
     if (theme == "style.css") {

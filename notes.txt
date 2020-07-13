@@ -23,8 +23,9 @@ container background:
 $russian-violet: rgba(46, 0, 48, 1); #2e0030
 
 higlights, modal h4:
-$mountain-meadow: rgba(0, 189, 157, 1); #00bd9d
+$green-blue: rgba(2, 103, 193, 1); #0267c1
+
 
 name, modal h5 and arrows:
-$green-blue: rgba(2, 103, 193, 1); #0267c1
+$mountain-meadow: rgba(0, 189, 157, 1); #00bd9d
 
