@@ -86,15 +86,20 @@ $(document).ready(function() {
     start();
 
     $(".projects .slick").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         swipe: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        cssEase: "linear",
+        autoplaySpeed: 5000,
+        cssEase: "ease-in-out",
+        useTransform: true,
+        speed: 1500,
+        pauseOnHover: true,
     });
+
+    $(".project-container").height(3 + "fr");
 });
 
 function german() {

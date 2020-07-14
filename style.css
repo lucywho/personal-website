@@ -209,6 +209,7 @@ em {
 }
 
 .projects {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,7 +221,7 @@ em {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
 
 .slick-prev:before,
@@ -228,17 +229,29 @@ em {
     color: #0267c1;
 }
 
+.project {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
 .project a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
 }
 
 .project a:hover {
     background-color: rgba(0, 189, 157, 0.15);
     border-radius: 30px;
+}
+
+.image-box {
+    display: flex;
+    align-items: flex-start;
+    width: 48%;
+    margin-right: 1%;
 }
 
 .project-image {
@@ -249,9 +262,22 @@ em {
     padding: 1%;
 }
 
+.project-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
 .project-name {
     font-size: 1.5rem;
     padding-top: 1%;
+}
+
+.project-description {
+    padding: 0 20px 0 10px;
 }
 
 /* __BLOG POSTS__*/
@@ -426,6 +452,7 @@ h5 {
         margin: 0;
         width: 100%;
         height: auto;
+        min-height: 150px;
     }
 
     .about-me-header {
@@ -486,14 +513,29 @@ h5 {
     }
 
     .project-container {
-        background-image: none;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     .project-image {
         border-width: 2px;
         height: 60px;
         width: 60px;
+    }
+
+    .projects-header {
+        font-size: 0.9rem;
+    }
+
+    .project-info {
+        font-size: 0.6rem;
+        max-height: 150px;
+        overflow-y: auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 15px;
+        font-weight: bold;
     }
 
     #X {
