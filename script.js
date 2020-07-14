@@ -1,5 +1,26 @@
 let theme = $("head link#style").attr("href");
 
+$(document).ready(function() {
+    start();
+
+    $(".projects .slick").slick({
+        dots: false,
+        infinite: true,
+        swipe: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        auto: true,
+        autoplaySpeed: 5000,
+        cssEase: "ease-in-out",
+        useTransform: true,
+        speed: 1500,
+        pauseOnHover: true,
+    });
+
+    $(".project-container").width(98 + "%");
+});
+
 $(".self").html(
     '<img src="./assets/lucy.jpg" alt="Lucy Toman profile photo" />'
 );
@@ -66,7 +87,7 @@ function start() {
     $(".welcome-text").html("Welcome to my website!");
     $(".about-me-header").html(`<strong>HIRE ME!</strong>`);
     $(".about-me-text").html(
-        `I'm a recent graduate of Spiced Academy's full stack web development course. I write in vanilla JavaScript and jQuery, with Node.js. I have built projects using Handlebars, Vue and React, and have created databases with postgreSQL.Now I'm looking for new challenges as a junior developer.</br></br>
+        `I'm a recent graduate of Spiced Academy's full stack web development course. I write in vanilla JavaScript and jQuery, with Node.js. I have built projects using Handlebars, Vue and React, and have created databases with postgreSQL. Now I'm looking for new challenges as a junior developer.</br></br>
         I have a degree in Education and 15 years experience as a policy advisor and project manager in the UK Civil Service. Native English-speaker with intermediate German</br></br>
         `
     );
@@ -81,26 +102,6 @@ function start() {
         '<button id="lang" class="de" onclick="toggleLang()">🇩🇪</button>'
     );
 }
-
-$(document).ready(function() {
-    start();
-
-    $(".projects .slick").slick({
-        dots: false,
-        infinite: true,
-        swipe: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        cssEase: "ease-in-out",
-        useTransform: true,
-        speed: 1500,
-        pauseOnHover: true,
-    });
-
-    $(".project-container").height(3 + "fr");
-});
 
 function german() {
     $(".projects-header").html("Aktuelle Projekte");
