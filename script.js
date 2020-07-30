@@ -3,20 +3,20 @@ let theme = $("head link#style").attr("href");
 $(document).ready(function() {
     start();
 
-    $(".projects .slick").slick({
-        dots: false,
-        infinite: true,
-        swipe: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        auto: true,
-        autoplaySpeed: 5000,
-        cssEase: "ease-in-out",
-        useTransform: true,
-        speed: 1500,
-        pauseOnHover: true,
-    });
+    // $(".projects .slick").slick({
+    //     dots: false,
+    //     infinite: true,
+    //     swipe: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     auto: true,
+    //     autoplaySpeed: 5000,
+    //     cssEase: "ease-in-out",
+    //     useTransform: true,
+    //     speed: 1500,
+    //     pauseOnHover: true,
+    // });
 
     $(".project-container").width(98 + "%");
 });

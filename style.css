@@ -61,7 +61,7 @@ a:hover,
     align-items: center;
     background-image: linear-gradient(
         90deg,
-        rgba(241, 233, 218, 0),
+        transparent,
         rgb(241, 233, 218, 1)
     );
     border-radius: 30px;
@@ -217,7 +217,7 @@ em {
     object-fit: cover;
 }
 
-.slick {
+/* .slick {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,7 +227,7 @@ em {
 .slick-prev:before,
 .slick-next:before {
     color: #0267c1;
-}
+} */
 
 .project {
     margin-left: 10px;
