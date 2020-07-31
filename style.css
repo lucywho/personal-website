@@ -69,7 +69,7 @@ a:hover,
 
 .name-text {
     padding-top: 2%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #0267c1;
     text-align: center;
@@ -159,7 +159,7 @@ button:hover {
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    padding-top: 1%;
+    margin-top: 0.5rem;
 }
 
 .about-me {
@@ -214,37 +214,17 @@ em {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
-}
-
-/* .slick {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: #0267c1;
-} */
-
-.project {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
 }
 
 .project a {
     display: flex;
+    height: 30vh;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 2%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.project a:hover {
-    background-color: rgba(0, 189, 157, 0.15);
-    border-radius: 30px;
 }
 
 .image-box {
@@ -254,7 +234,7 @@ em {
     margin-right: 1%;
 }
 
-.project-image {
+img.project-image {
     width: 30vh;
     height: 30vh;
     border: 5px solid #041f4a;
@@ -262,22 +242,35 @@ em {
     padding: 1%;
 }
 
-.project-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-}
-
 .project-name {
     font-size: 1.5rem;
-    padding-top: 1%;
 }
 
-.project-description {
-    padding: 0 20px 0 10px;
+.project-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.project a:hover {
+    background-color: rgba(0, 189, 157, 0.15);
+    border-radius: 30px;
+}
+
+.dot {
+    border-color: #2e0030;
+}
+
+.fill-in {
+    background-color: #2e0030;
+}
+
+.dot:hover {
+    background-color: #0267c1;
 }
 
 /* __BLOG POSTS__*/
@@ -508,6 +501,11 @@ h5 {
         padding-bottom: 5px;
     }
 
+    img.project-image {
+        height: 20vh;
+        width: 20vh;
+    }
+
     em {
         font-size: 0.5rem;
     }
@@ -522,20 +520,10 @@ h5 {
         width: 60px;
     }
 
-    .projects-header {
-        font-size: 0.9rem;
-    }
-
     .project-info {
         font-size: 0.6rem;
         max-height: 150px;
         overflow-y: auto;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 15px;
-        font-weight: bold;
     }
 
     #X {

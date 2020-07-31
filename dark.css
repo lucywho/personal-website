@@ -155,7 +155,7 @@ button:hover {
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    padding-top: 1%;
+    margin-top: 0.5rem;
 }
 
 .about-me {
@@ -184,6 +184,7 @@ button:hover {
 }
 
 /*__PROJECTS__*/
+
 .project-container {
     margin: 15px 0 15px 15px;
     grid-area: 3 / 1 / 6 / 3;
@@ -209,39 +210,18 @@ em {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
-}
-
-.slick {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: #00bd9d;
-}
-
-.project {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
 }
 
 .project a {
     display: flex;
+    height: 30vh;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 2%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
-.project a:hover {
-    background-color: rgba(0, 189, 157, 0.15);
-    border-radius: 30px;
-}
-
 .image-box {
     display: flex;
     align-items: flex-start;
@@ -249,7 +229,7 @@ em {
     margin-right: 1%;
 }
 
-.project-image {
+img.project-image {
     width: 30vh;
     height: 30vh;
     border: 5px solid #f1e9da;
@@ -257,23 +237,35 @@ em {
     padding: 1%;
 }
 
+.project-name {
+    font-size: 1.5rem;
+}
+
 .project-info {
     width: 100%;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow-y: auto;
 }
 
-.project-name {
-    font-size: 1.5rem;
-    padding-top: 1%;
+.project a:hover {
+    background-color: rgba(0, 189, 157, 0.15);
+    border-radius: 30px;
 }
 
-.project-description {
-    padding: 0 20px 0 10px;
+.dot {
+    border-color: #00bd9d;
+}
+
+.fill-in {
+    background-color: #00bd9d;
+}
+
+.dot:hover {
+    background-color: #0267c1;
 }
 
 /* __BLOG POSTS__*/
@@ -504,6 +496,11 @@ h5 {
         padding-bottom: 5px;
     }
 
+    img.project-image {
+        height: 20vh;
+        width: 20vh;
+    }
+
     em {
         font-size: 0.5rem;
     }
@@ -518,20 +515,10 @@ h5 {
         width: 60px;
     }
 
-    .projects-header {
-        font-size: 0.9rem;
-    }
-
     .project-info {
         font-size: 0.6rem;
         max-height: 150px;
         overflow-y: auto;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 15px;
-        font-weight: bold;
     }
 
     #X {

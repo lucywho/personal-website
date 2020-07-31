@@ -51,18 +51,18 @@
     }
 
     function clickHandler(dotIndex) {
-        if (isTransitioning) {
-            return;
-        } else {
-            return function() {
+        return function() {
+            if (isTransitioning) {
+                return;
+            } else {
                 for (let d = 0; d < dots.length; d++) {
                     dots[d].classList.remove("fill-in");
                 }
                 dots[dotIndex].classList.add("fill-in");
                 clearTimeout(timer);
                 moveProject(dotIndex);
-            };
-        }
+            }
+        };
     }
 
     document.addEventListener("transitionend", function(event) {
