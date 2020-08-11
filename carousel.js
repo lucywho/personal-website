@@ -65,6 +65,43 @@
         };
     }
 
+    document
+        .getElementById("right")
+        .addEventListener("click", function rightClick() {
+            if (isTransitioning) {
+                return;
+            } else {
+                for (let d = 0; d < dots.length; d++) {
+                    dots[d].classList.remove("fill-in");
+                }
+            }
+
+            dots[i].classList.add("fill-in");
+            clearTimeout(timer);
+            moveProject();
+        });
+
+    document
+        .getElementById("left")
+        .addEventListener("click", function leftClick() {
+            if (isTransitioning) {
+                return;
+            } else {
+                for (let d = 0; d < dots.length; d++) {
+                    dots[d].classList.remove("fill-in");
+                }
+            }
+            if (i === 0) {
+                index = dots.length - 1;
+            } else {
+                index = i - 1;
+            }
+
+            dots[i].classList.add("fill-in");
+            clearTimeout(timer);
+            moveProject(index);
+        });
+
     document.addEventListener("transitionend", function(event) {
         if (event.target.classList.contains("offscreen-left")) {
             event.target.classList.remove("offscreen-left");
