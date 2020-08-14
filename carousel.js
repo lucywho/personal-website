@@ -43,7 +43,10 @@
             dots[i].classList.add("fill-in");
             project[i].classList.add("onscreen");
         }
-        timer = setTimeout(moveProject, 7000);
+
+        window.requestAnimationFrame(function() {
+            timer = setTimeout(moveProject, 7000);
+        });
     }
 
     for (let x = 0; x < dots.length; x++) {

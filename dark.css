@@ -222,6 +222,7 @@ em {
     justify-content: center;
     align-items: center;
 }
+
 .image-box {
     display: flex;
     align-items: flex-start;
@@ -266,6 +267,14 @@ img.project-image {
 
 .dot:hover {
     background-color: #0267c1;
+}
+
+.arrow {
+    color: #00bd9d;
+}
+
+.arrow:hover {
+    color: #0267c1;
 }
 
 /* __BLOG POSTS__*/
@@ -400,6 +409,15 @@ h5 {
 
 .print a:hover {
     color: #0267c1;
+}
+
+@media screen and (max-width: 1030px) {
+    .project-name {
+        font-size: 1.25rem;
+    }
+    .project-info {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 415px) {
